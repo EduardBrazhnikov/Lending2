@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Lending</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="before-load">
+      <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+    </div>
+<!-- require_once 'data.php'; -->
+<!-- foreach($objs as $obj) { -->
+	<!-- $obj->render(); -->
+<!-- } -->
+    <header class="header">
+      <div class="mobileMenu">&equiv;</div>
+        <nav>
+          <ul class="myMenu">
+            <li class="menuItem Mwork"><a href="#work">Наши работы</a></li>
+            <li class="menuItem Madvantages"><a href="#advantages">Преимущества</a></li>
+            <li class="menuItem Mprise"><a href="#prise">Цены</a></li>
+            <li class="menuItem Mcontact"><a href="#contact">Контакты</a></li>
+          </ul>
+        </nav>
+      <div class="shortAbout">
+        <h1>УСЛУГИ ЭЛЕКТРИКА В КИЕВЕ</h1>
+        <p>Мы маленькая компания с небольшим штатом сотрудников, которые являются прекрасными специалистами в сфере электромонтажа. 
+           Работаем напрямую с клиентом, без посредников, что значительно снижает цены на услуги электрика в Киеве, 
+           при этом, качество работы остается на высоте. Наши электрики сделают, как обычный ремонт светильника, так и капитальный ремонт проводки во всей квартире, 
+           доме, офисе, и тому подобное. Мы имеем большой опыт работы в сфере электромонтажа и с радостью поможем вам с любыми электротехническими поломками.</p>
+        <a href="#contacts"><div class="callElectric">Вызвать</div></a>
+      </div>
+      <div class="slider"></div>
+      <div class="topButton"><img class="ArrowUp" src="img/ArrowUp.png"/></div>
+    </header>
+    <section id="work">
+      <h2>ПРИМЕРЫ РАБОТ</h2>
+      <div class="row">
+        <div class="square"><p class="textSquare">ОСВЕЩЕНИЕ</p><img class="imgSquare" src="img/1.jpg" alt="освещение"/></div>
+        <div class="square"><p class="textSquare">ФУРНИТУРА</p><img class="imgSquare" src="img/2.jpg" alt="освещение"/></div>
+        <div class="square"><p class="textSquare">АВТОМАТИКА</p><img class="imgSquare" src="img/3.jpg" alt="освещение"/></div>
+        <div class="square"><p class="textSquare">ПРОВОДКА</p><img class="imgSquare" src="img/4.png" alt="освещение"/></div>
+      </div>
+    </section> 
+    <section id="contacts">
+      <h2>ВЫЗВАТЬ ЭЛЕКТРИКА</h2>
+      <div class="row">
+        <div class="leftBlock">
+          <h2 class="saleTitle">Акция - скидка 10%</h2>
+          <p class="saleDescription">Успей сэкономить до 4 июля!</p>
+          <div class="timer">
+            <h4>ДО ЗАВЕРШЕНИЯ АКЦИИ:</h4>
+            <div class="saleTime">
+              <div class="number"><div class="time"><span id="days">00</span></div><div class="description1">Дней</div></div>
+              <div class="number"><div class="time"><span id="hours">00</span></div><div class="description1">Часов</div></div>
+              <div class="number"><div class="time"><span id="minutes">00</span></div><div class="description1">Минут</div></div>
+              <div class="number"><div class="time"><span id="seconds">00</span></div><div class="description1">Секунд</div></div>      
+            </div>
+          </div>
+        </div>
+        <div class="rightBlock">
+          <form class="form" action="#">
+            <h2 class="saleTitle">Вызов электрика</h2>
+            <input class="formInput" name="userName" required type="text" placeholder="Введите ваше имя"><br><br>
+            <input class="formInput" name="userPhone" required type="text" placeholder="Введите телефон"><br><br>
+            <button class="button" name="submit" type="submit">ВЫЗВАТЬ ЭЛЕКТРИКА</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id="advantages">
+      <h2>ПРЕИМУЩЕСТВА</h2>
+      <div class="row">
+        <div><div class="circle"><img alt="опытные электрики" src="img/elektrik.png"/></div><p class="circleText">Опытные Электрики</p></div>
+        <div><div class="circle"><img alt="скидки" src="img/sale.png"/></div><p class="circleText">Система скидок</p></div>
+        <div><div class="circle"><img alt="материалы" src="img/dostavka.png"/></div><p class="circleText">Подбор и доставка материалов</p></div>
+        <div><div class="circle"><img alt="без выходных" src="img/time.png"/></div><p class="circleText">Работаем без выходных</p></div>
+      </div>
+    </section>
+    <section id="prise">
+      <h2>ЦЕНЫ</h2>
+      <div class="row">
+        <div class="cost"><h3>КВАРТИРА</h3><p>(1 комнатная квартира)</p><p class="costСommon">от 6 000 грн</p></div>
+        <div class="cost"><h3>ДОМ</h3><p>(большая кропотливая работа)</p><p class="costСommon">от 15 000 грн</p></div>
+        <div class="cost"><h3>ОФИС</h3><p>(офисы, складские помещения, серверные)</p><p class="costСommon">от 3 500 грн</p></div>
+        <div class="cost"><h3>ПРЕЙСКУРАНТ</h3><p>(полный прейскурант цен)</p><a href="price.pdf">Смотреть</a></div>
+      </div>
+    </section>
+    <footer>
+      <section id="contact">
+        <div class="contacts"><h3>Свяжитесь с нами</h3>
+          <a href="mailto: edikbrazhnikov@gmail.com">edikbrazhnikov@gmail.com</a><br>
+          <a href="tel: +380963412034">+380963412034</a>
+        </div>
+        <div class="contacts"><h3>Социальные сети</h3>
+          <a href="https://www.facebook.com/eduard.brajnikov"><img class="social" alt="Facebook" src="img/Facebook.png"></a>
+          <a href="https://www.instagram.com/eduardbrazhnikov/"><img class="social" alt="Instagram" src="img/Instagram.png"></a>
+        </div>
+        <div class="contacts"><h3>Расположение</h3>
+          <p>Украина<br>г. Киев</p>
+        </div>
+      </section>
+      <hr>
+      <div class="creature">Создание: <a href="https://web-time.com.ua/">web-time.com.ua</a></div>
+    </footer>
+    <script src="js/jquery-3.3.1.js" defer></script>
+    <script src="js/script.js" defer></script>
+</body>
+</html>

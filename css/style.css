@@ -1,0 +1,388 @@
+html, body { height: 100%; max-width: 100%; padding: 0; margin: 0;}
+a {color: #006400;}
+/*Прелоадер*/
+#before-load {
+    position: fixed; 
+    left: 0;
+    top: 0;
+    right: 0; 
+    bottom: 0;
+    background: #fff;
+    z-index: 100000;
+}
+#before-load i {
+    font-size: 140px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -70px 0 0 -70px;
+}
+/*Слайдер*/
+.callElectric {
+	width: 200px;
+	padding: 0.7em;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 1.3em;
+	text-transform: uppercase;
+	background-color: #000000;
+	outline: none;
+	border-radius: 10px;
+	color: #FFA500;
+	text-align: center;
+	margin: auto;
+}
+.callElectric:hover {
+	background-color: #FF8C00;
+	color: #000;
+}
+.shortAbout {
+	width: 50%;
+	position: absolute;
+	top: 30%;
+	left: 25%;
+	text-align: center;
+	color: #fff;
+	z-index: 9000;
+	font-family: 'Oswald', sans-serif;
+}
+.shortAbout > p {
+	font-size: 1.2em;
+}
+.titleSlide {
+	color: #FFA500; 
+	border-radius: 1em; 
+	text-align: center; 
+	background-color: #000000; 
+	opacity: 0.7; 
+	width: 10em; 
+	padding: 0.2em; 
+	font-size: 2.3em; 
+	position: absolute; 
+	top: 1.8em; 
+	left: 1.5em;
+	z-index: 8000;
+}
+.topButton {
+    position: fixed;
+	right:3%;
+	bottom: 5%;
+    width: 70px;
+	height: 70px;
+    display:none;
+	z-index: 4;
+	cursor: pointer;
+	object-fit: cover;
+    }
+.ArrowUp {
+	width: 100%;
+	height: 100%;
+    }
+/*Меню*/
+.myMenu {
+  position: absolute;
+  right: 0.5em;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1em;
+  width: 80%;
+  list-style: none;
+  z-index: 10000;
+}
+.mobileMenu {
+  display: none;
+}
+.menuItem {
+  display: flex;
+  font-family: 'Oswald', sans-serif;
+}
+.menuItem a {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  color: #FFA500;
+  font-size: 1.7em;
+  text-decoration: none;
+}
+.menuItem a:hover {
+  margin-top: -0.3em;
+  text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+}
+/*Контент сайта*/
+#work {
+	width: 100%;
+}
+#work > h2 {
+	color: #FFA500;
+	text-align: center;
+	background-color: #000;
+	margin-top: 0;
+	padding: 0.5em;
+	font-family: 'Oswald', sans-serif;
+}
+#advantages > h2, #prise > h2, #contacts > h2 {
+	color: #FFA500;
+	text-align: center;
+	background-color: #000;
+	margin-bottom: 4em;
+	margin-top: 0;
+	padding: 0.5em;
+	font-family: 'Oswald', sans-serif;
+}
+.row {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.square {
+	width: 200px;
+	height: 200px;
+	border: 6px solid #4682B4;
+	border-radius: 15px;
+	transform: rotate(45deg);
+	cursor: pointer;
+	margin: 3em;
+	margin-bottom: 4em;
+	overflow:hidden;	
+}
+.square:hover {
+	border-color: #FFA500;
+}
+.textSquare {
+	width: 100%;
+	position: absolute;
+	top: 70px;
+	left: 0;
+	color: #FFFF00;
+	font-size: 1.2em;
+	font-weight: 600;
+	text-align: center;
+	background-color: #000;
+	border-radius: 5px;
+	opacity:0.8;
+	transform: rotate(-45deg);
+	z-index: 12000;
+}
+.imgSquare {
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform: rotate(-45deg) scale(1.42);
+}
+#advantages {
+	width: 100%;
+}
+#prise{
+	width: 100%;
+	background-image: url(../img/electro.jpg);
+	padding-bottom: 5em;
+	font-family: 'Oswald', sans-serif;
+}
+.cost {
+	width: 300px;
+	color: #fff;
+	background-color: #000;
+	opacity: 0.7; 
+	text-align: center;
+	box-shadow: 0px 0px 19px 15px rgba(255,255,255,255.75);
+	padding: 0.5em;
+	margin-top: 0.5em;
+}
+.cost > a {
+	font-size: 2em;
+}
+.costСommon {
+	font-size: 2em;
+	color: #fff;
+	font-weight: 600;
+}
+#contacts {
+	width: 100%;
+	background-image: url(../img/elektrik.jpg);
+}
+.saleTime {
+	display: flex;
+	justify-content: center;
+}
+.saleTitle {
+	font-size: 2.2em;
+	color: #4682B4;
+}
+.saleDescription {
+	font-size: 1.2em;
+}
+.number {
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+.time {
+	background-color: #FF0000;
+	border-radius: 10px;
+	width: 20px;
+	padding: 1em;
+	color: #fff;
+	font-weight: 600;
+}
+.leftBlock, .rightBlock {
+	background-color: #fff;
+	border-radius: 10%;
+	margin-bottom: 4em;
+	padding-bottom: 3em;
+	padding-left: 2em;
+	padding-right: 2em;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	box-sizing: border-box;
+}
+.formInput {
+	height: 40px;
+	width: 85%;
+	border: 1px solid #808080;
+	border-radius: 5px;
+	font-size: 1.1em;
+	outline:none;
+	padding-left: 2px;
+}
+.button {
+	height: 70px;
+	width: 85%;
+	border: 0;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: 800;
+	font-size: 1.2em;
+	background: linear-gradient(to top, #FF8C00, #FFD700);	
+}
+.shortAbout > a {
+	text-decoration: none;
+}
+.circle {
+	width: 200px;
+	height: 200px;
+	border: 2px solid #15bdce;
+	border-radius: 100px;
+	margin: auto;
+	padding: 1em;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.circle > img {object-fit: fill; width: 100%;}
+.circleText {
+	text-align: center;
+	margin-bottom: 3em;
+	font-size: 1.5em;
+	font-family: 'Oswald', sans-serif;
+}
+/*Футер*/
+footer {
+	width: 100%;
+	min-height: 200px;
+	background-color: #000;
+	font-family: 'Oswald', sans-serif;
+}
+#contact {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.contacts {
+	text-align: center;
+	margin: 1em;
+	color: #006400;
+}
+.contacts > h3 {
+	color: #FFA500;
+	text-transform: uppercase;
+}
+.social {
+	width: 4em; 
+	height: 4em;
+}
+.creature {
+	width: 100%;
+	color: #A9A9A9;
+	text-align: center;
+}
+/*Мобильная версия сайта*/
+@media (max-width: 991px) {
+.shortAbout {
+	width: 100%;
+	position: absolute;
+	top: 20%;
+	left: 0;
+	padding: 2px;
+	box-sizing: border-box;
+}
+.shortAbout > p {
+	font-size: 1em;	  
+}
+.titleSlide {
+	color: #FFA500; 
+	border-radius: 1em; 
+	text-align: center; 
+	background-color: #000000; 
+	opacity: 0.7; 
+	width: 90%; 
+	padding: 0.2em; 
+	font-size: 1.5em; 
+	position: absolute; 
+	top: 2.2em; 
+	left: 5%;
+	z-index: 8000;
+	box-sizing: border-box;
+}
+.mobileMenu {
+  position: absolute;
+  top: 0;
+  right: 0.5em;
+  display: block;
+  font-size: 4em;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  z-index: 11000;
+}
+.myMenu {
+  display: none;
+  position: fixed;
+  left: 0;
+  margin: 0;
+  padding-top: 2em;
+  padding-left: 0;
+  width: 70%;
+  height: 100%;
+  list-style: none;
+  background-color: #000;
+  box-sizing: border-box;
+  z-index: 90000;
+}
+.menuItem {
+  justify-content: center;
+}
+.menuItem a:hover {
+  margin: 0;
+  color: #fff;
+}
+.mobColumn {
+  flex-direction: column;
+  align-items: center;
+}
+.leftBlock, .rightBlock {
+	width: 100%;
+	border-radius: 0%;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+}
+@media (max-width: 360px) {
+	.shortAbout > p {
+	font-size: 1em;
+	display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+	text-overflow: ellipsis;	  
+}
+}
